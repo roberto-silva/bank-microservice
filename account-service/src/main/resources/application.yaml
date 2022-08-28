@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:account-test-db
+    driver-class-name: org.h2.driver
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+server:
+  port: 8080
