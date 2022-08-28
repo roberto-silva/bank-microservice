@@ -13,15 +13,15 @@ import org.springframework.data.annotation.CreatedDate;
 import lombok.Data;
 
 @Data
-@Entity(name = "accout")
+@Entity(name = "account")
 public class Account {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	@Column(name="costumer_id")
-	private long costumerId;
+	private Long customerId;
 	
 	@Column(name="type")
 	private String type;
